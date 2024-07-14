@@ -1,0 +1,417 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(229, 26, 26);
+    padding: 10px 12px;
+    border-bottom: 3px solid yellow;
+}
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.logo {
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(229, 26, 26);
+    font-family: 'Times New Roman', Times, serif;
+}
+.navlinks li  {
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding-right: 2rem;
+}
+.navlinks a {
+    color: #fff;
+}
+.off li a {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+.off li .bx {
+    color: #fff;
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+}
+.navlinks .bx {
+    font-size: 1.7rem;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+.dashboard_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 12px;
+    border-bottom: 1px solid #000;
+}
+.nav_link li a {
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.nav_link  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 8rem;
+}
+.nav_link li {
+    border-right: 1px solid #000;
+    padding-right: 2.5rem;
+}
+.summary {
+    display: flex;
+    gap: 1rem;
+    background-color: #d2d2d2;
+    padding: 10px 20px;
+    color: rgb(78, 60, 78);
+    font-size: 1.2rem;
+}
+.transfer-container {
+    background-color: #fff;
+    margin-top: -1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: none;
+}
+/* .transfer {
+    background-image: url(./wellsspic.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+.transfer-container .M {
+    display: flex;
+    justify-content: space-between;
+}
+.transfer-container .M h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: rgb(78, 60, 78);
+    padding-bottom: 50px;
+}
+.transfer-container .M a {
+    text-decoration: underline;
+    color: rgb(10, 97, 236);
+    font-size: 1.2rem;
+    padding-right: 200px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.transfer-container .g {
+    display: flex;
+    gap: 1rem;
+    padding-left: 40rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    align-items: center;
+}
+.transfer-container .g p {
+    color: rgb(125, 79, 125);
+    font-weight: 600;
+
+}
+.transfer-container .g a {
+    text-decoration: underline;
+    color: rgb(10, 97, 236);
+    font-size: 1rem;
+    padding-right: 15px;
+    align-items: center;
+    text-align: center;
+}
+.transfer-container .g .add {
+    border-right: 2px solid #000;
+}
+.transfer-form .input-group {
+    display: grid;
+    padding-left: 20px;
+}
+.transfer-form .input-group label {
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(97, 64, 97);
+}
+.transfer-form .input-group select {
+    width: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.transfer-form .input-group .to {
+    padding-top: 20px;
+}
+.transfer-form .input-group .free {
+    padding-top: 20px;
+}
+.transfer-form .input-group #one {
+    width: 250%;
+    margin-bottom: 2rem;
+}
+.transfer-form .input-group #dob {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.transfer-form .input-group #date {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    padding: 15px 25px;
+}
+.transfer-form .fre {
+    display: flex;
+    gap: 8rem;
+}
+.transfer-form .input-group #amount {
+    padding: 8px 25px;
+}
+.transfer-form .input-group #dollar {
+    border: 1px solid #000;
+    padding: 6.8px 8px;
+    margin-right: -0.3rem;
+    background-color: #d1cfcf;
+}
+.transfer-form .input-group p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 8px;
+    color: rgb(97, 64, 97);
+}
+.transfer-form .input-group a {
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    color: rgb(52, 127, 249);
+    font-size: 15px;
+    font-weight: 550;
+}
+.transfer-form .input-group .delivery {
+    color: rgb(97, 64, 97);
+}
+.transfer-form .input-group .delivery p {
+    font-size: 14px;
+    font-weight: 550;
+    margin-bottom: 3rem;
+}
+.transfer-form .input-group .delivery h2 {
+    font-size: 19px;
+    font-weight: 550;
+}
+.transfer-form .input-group #memo {
+    padding: 10px 25px;
+    width: 25%;
+    /* margin-bottom: 1rem; */
+}
+.transfer-form  hr {
+    margin-left: 20px;
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.transfer-form button {
+    flex-direction: column;
+    padding: 8px 20px;
+    width: 10%;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.transfer-form #submit {
+    display: flex;
+    margin-left: 23rem;
+    gap: 1rem;
+}
+.transfer-form .Cancel {
+    background-color: #d5d5d5;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+.transfer-form #submit a {
+    color: rgb(97, 64, 97);
+    text-decoration: none;
+}
+.transfer-form .Continue {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+.transfer-form .input-group .Continue {
+    color: white;
+}
+.transform {
+    background-color: rgb(229, 26, 26);
+    position: absolute;
+    width: 100%;
+}
+/* .frame {
+    background-color: #fff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+} */
+.transfer-form {
+    background-color: #fff;
+    margin: 2rem 1rem;
+    border-radius: 8px;
+}
+.transfer-form hr {
+    width: 90%;
+}
+#transform-form h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.input-group input {
+    width: 100%;
+    color: inherit;
+    border: none;
+    font-size: 0.8rem;
+    /* padding: 140px auto; */
+    margin-bottom: 0.5rem;
+    outline: none;
+} 
+.input-group select {
+    width: 50%;
+    color: inherit;
+    border: none;
+    font-size: 0.8rem;
+    padding: auto 50px;
+    margin-bottom: 0.5rem;
+    outline: none;
+    /* margin-left: 5rem; */
+}
+#bank {
+    width: 100%;
+    padding: 8px;
+}
+.transfer-form #sendBtn {
+    padding: 8px;
+    border: none;
+    background-color: rgb(127, 6, 6);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 3rem;
+    /* margin-right: 1rem; */
+}
+.transfer-form #sendBtn a {
+    color: #fff;
+}
+.transfer-form #sendBtn:hover {
+    background-color: #b69b9b;
+    color: #000;
+}
+.transfer-form .close {
+    padding: 8px;
+    border: none;
+    background-color: rgb(228, 10, 10);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+}
+.transfer-form .close a {
+    color: #fff;
+}
+.transfer-form .close:hover {
+    background-color: rgb(157, 6, 6);
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem auto;
+    border-bottom: 1px solid black;
+    /* border-width: 65%; */
+    width: 65%;
+}
+@media  (max-width: 375px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .nav-links {
+        display: none;
+    }
+    header .logo {
+        font-size: 1.2rem;
+    }
+    .dashboard_header {
+        display: none;
+    }
+    .summary {
+        display: none;
+    }
+    .transfer {
+        background: none;
+    }
+    .transfer-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+@media  (max-width: 420px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header .nav-links {
+        display: none;
+    }
+    header .logo {
+        font-size: 1.2rem;
+    }
+    .dashboard_header {
+        display: none;
+    }
+    .summary {
+        display: none;
+    }
+    .transfer {
+        background: none;
+    }
+    .transfer-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

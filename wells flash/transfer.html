@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="dashboard.css"> -->
+     <link rel="stylesheet" href="transfer.css">
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <button class="logo">
+            WELLS FARGO
+        </button>
+        <div class="nav-links">
+            <ul class="navlinks">
+                <li><i class='bx bx-search-alt-2' ></i></li>
+                <li><i class='bx bx-user-circle'></i><a href="#">Welcome, Carl</a></li>
+            </ul>
+        </div>
+        <div class="off">
+            <li><i class='bx bx-power-off'></i><a href="./wellsfargo.html">Sign Off</a></li>
+        </div>
+    </header>
+    <section class="dashboard_header">
+          <ul class="nav_link">
+            <li><a href="#">Accounts</a><i class='bx bx-chevron-down'></i></li>
+            <li><a href="#">Brokerage</a></li>
+            <li><a href="#">Transfer & Pay</a><i class='bx bx-chevron-down'></i></li>
+            <li><a href="#">Plan & Learn</a><i class='bx bx-chevron-down'></i></li>
+            <li><a href="#">Security & Support</a><i class='bx bx-chevron-down'></i></li>
+          </ul>
+    </section>
+    <section>
+        <div class="summary">
+            <i class="fa-solid fa-house"></i>
+            <p>Account Summary</p>
+        </div>
+    </section>
+    
+    <!-- <section class="transfer">
+            <div class="transfer-content">
+                <div class="transfer-container">
+                    <span class="M">
+                        <h2>Transfer Money</h2>
+                        <a href="#">Help</a>
+                    </span>
+                    <span class="g">
+                        <p>Non-Wells Fargo accounts: </p>
+                        <a class="add" href="#">Add account</a>
+                        <a href="#">Manage</a>
+                    </span>
+                    <div class="transfer-form">
+                        <form action="#">
+                            <div class="input-group">
+                                <label for="text">From</label>
+                                <select name="account" id="account" title="Select Account">
+                                    <option value="0">Select Account</option>
+                                    <option value="1">Account.....2907</option>
+                                    <option value="2">Add Account</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="text" class="to" >To</label>
+                                <select name="account" id="account" title="Select Account">
+                                    <option value="0">Select Account</option>
+                                    <option value="1">Account.....2907</option>
+                                    <option value="2">Add Account</option>
+                                </select>
+                            </div>
+                           <span class="fre">
+                            <div class="input-group">
+                                <label for="text" class="free">Frequency</label>
+                                <select name="one" id="one">
+                                    <option value="0">Select one</option>
+                                    <option value="1">Once</option>
+                                    <option value="2">Twice</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="dob" id="dob">Send on</label>
+                                <input type="date"  id="date"  >
+                            </div>
+                           </span>
+                           <div class="input-group">
+                            <label for="checking_amount" id="checking_amount">Amount</label>
+                            <span>
+                                <label for="$" id="dollar">$</label>
+                                <input type="text" id="amount">
+                                <p>Max. you can send today is $5,000.00 (3 bus. days).</p>
+                                
+                            </span>
+                            <a href="#">Transfer Limits</a>
+                            <span class="delivery">
+                                <h2>Delivery</h2>
+                                <p>3 business days</p>
+                            </span>
+                           </div>
+                           <div class="input-group">
+                            <label for="text">Memo(optional)</label>
+                            <input type="text" placeholder="Use letters, numbers, or # / $ % @ ." id="memo">
+                            <p>This memo will only be seen by you.</p>
+                           </div>
+                           <hr>
+                           <div class="input-group" id="submit">
+                            <a href="dashboard.html" class="Cancel">Cancel</a>
+                            <a href="#" class="Continue">Continue</a>
+                           </div>
+                        </form>
+                    </div> -->
+                    <!-- <div class="activity">
+                        <h2>
+                            <i class="fa-solid fa-ban"></i>
+                            Transfer & payment activity (0)
+                        </h2>
+                    </div> -->
+            </div>
+               
+        
+    </section>
+
+    <div class="transform">
+            <div class="transfer-form">
+                <form action="#" id="transform-form">
+                        <h2>Transfer</h2>
+                    <hr>
+                    <div class="input-group">
+                        <label for="type">Account type</label>
+                        <select name="Account" id="bank">
+                            <option value="0">Account type</option>
+                            <option value="1">Everyday checking...2907</option>
+                            <option value="2">Personal savings</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="numbers">Routine Number</label>
+                        <input type="number" id="rounumber" placeholder="Routine number" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="number">Account Number</label>
+                        <input type="number" id="accnumber" placeholder="Account number" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="text">Account Name</label>
+                        <input type="text" id="accname" placeholder="Account name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="bankName" placeholder="Transfer amount" min="0" step="0.01" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="text">Bank Name</label>
+                        <input type="text" id="bankName" placeholder="Bank name" required>
+                    </div>
+                    <button id="sendBtn"><a href="letter.html">Send</a></button>
+                    <hr>
+                    <button class="close"><a href="./dashboard.html">Close</a></button>
+            </div>
+            
+        <!-- </div> -->
+    </div>
+
+</body>
+</html>

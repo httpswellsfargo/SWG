@@ -1,0 +1,795 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(229, 26, 26);
+    padding: 10px 12px;
+    border-bottom: 3px solid yellow;
+}
+header #menu-icon {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    display: none;
+}
+header .name .bx {
+    color: white;
+    font-size: 1.5rem;
+}
+header .name a {
+    color: white;
+    font-size: 1rem;
+}
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.logo {
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(229, 26, 26);
+    font-family: 'Times New Roman', Times, serif;
+}
+.navlinks li  {
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding-right: 2rem;
+}
+.navlinks a {
+    color: #fff;
+}
+.navlinks .bx {
+    font-size: 1.7rem;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+.dashboard_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 12px;
+    border-bottom: 1px solid #000;
+}
+.nav_link li a {
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.nav_link li .dropbtn {
+    border: none;
+    background-color: transparent;
+}
+.nav_link li .dropacc {
+    border: none;
+    background-color: transparent;
+}
+.nav_link  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.nav_link li {
+    border-right: 1px solid #000;
+    padding-right: 2.5rem;
+}
+.dash {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e1dfdf;
+    padding: 10px 12px;
+}
+.dash .nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20rem;
+}
+.dash .nav_links li a {
+    color: #000;
+    font-weight: 200;
+}
+.dash .nav_links li #home {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.dash .nav_links li #arrow {
+    font-size: 0.7rem;
+    padding-left: 0.3rem;
+}
+.dash .nav_links li #printer {
+    font-size: 1.1rem;
+    color: rgb(0, 0, 122);
+    padding-right: 0.5rem;
+}
+.dashboard_container {
+    background-image: url(./wellsspic.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.dashboard_content {
+    background-color: #fff;
+    margin-top: -1.4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    /* border-bottom: 2px solid #000; */
+}
+.checkings {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-left: 4px solid rgb(225, 3, 3);
+}
+.checking span {
+    display: flex;
+    align-items: center;
+}
+.checking span .bx {
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+.checking span h2 {
+    font-weight: 550;
+    font-size: 1.2rem;
+    color: rgb(129, 6, 6);
+}
+.checking .acc {
+    gap: 1.5rem;
+    font-size: 0.8rem;
+    padding-left: 45px;
+    color: rgb(10, 10, 42);
+   cursor: pointer;
+}
+.checking .acc p {
+    border-bottom: 1.5px dashed rgb(16, 16, 78);
+}
+.checking_amount h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #292828;
+}
+.checking_amount p {
+    border-bottom: 1.5px dashed #000;
+}
+.transfer-navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.transfer-navlinks a {
+    color: rgb(0, 0, 0);
+}
+.transfer-navlinks a:hover {
+    text-decoration: underline;
+}
+.transfer-navlinks .bx {
+    color: rgb(3, 3, 78);
+    padding-right: 0.8rem;
+}
+.summary {
+    background-color: #e4e4e4;
+}
+.summary h6 {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 550;
+}
+.summary span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.summary .current {
+    background-color: rgb(222, 213, 213);
+    padding: 15px 40px;
+    margin: 0 2rem;
+    border-top: 1px solid #000;
+}
+.summary .current a {
+    color: #000;
+}
+.summary .debit {
+    padding: 15px 40px;
+    margin: 0 2rem;
+}
+.summary .debit a {
+    color: #000;
+}
+.summary .credit {
+    background-color: rgb(222, 213, 213);
+    padding: 15px 40px;
+    margin: 0 2rem;
+}
+.summary .credit a {
+    color: #000;
+}
+.summary .balance {
+    padding: 15px 40px;
+    margin: 0 2rem;
+}
+.summary .balance a {
+    color: #000;
+    font-weight: 700;
+}
+.summary .balance p {
+    font-weight: 700;
+}
+.summary .view {
+    background-color: rgb(222, 213, 213);
+    padding: 15px 40px;
+    margin: 0 2rem;
+    justify-content: left;
+    gap: 2rem;
+}
+.summary .view a {
+    color: rgb(0, 0, 154);
+    text-decoration: underline;
+}
+.summary .routine {
+    padding: 30px 40px 40px 40px;
+    margin: 0 2rem;
+}
+.summary .routine a {
+    color: #000;
+    
+}
+
+.agreement {
+    display: grid;
+    align-items: center;
+    background-color: #d5d4d4;
+}
+.agreement i {
+    margin: 1.5rem 0 1rem 4rem;
+    color: blue;
+}
+.agreement p {
+    display: flex;
+    align-items: center;
+    margin: 0 4rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+}
+.agreement__table {
+    color: black;
+}
+table,th,td {
+    border: 2px solid;
+    /* width: 50%; */
+    border-collapse: collapse;
+    padding: 20px;
+    margin: 3rem;
+}
+th {
+    text-align: center;
+    font-size: 1.5rem;
+}
+td{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* opacity: -1; */
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content h2 {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1rem;
+}
+/* .dropdown-content .bx {
+    font-size: 1.5rem;
+    text-align: left;
+    align-items: center;
+    margin-top: 1rem;
+} */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* opacity: 1; */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav_link .dropdown .dropbtn {
+    border: none;
+} 
+.dropdown-content {
+    display: block;
+    /* grid-template-columns: auto; */
+    margin: 0;
+    width: 25%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 35vh;
+    z-index: -1;
+    background-color: rgb(208, 208, 208);
+    /* left: 1000px; */
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.dropdown-content.active {
+    background-color: rgb(216, 216, 216);
+    top: 99px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    height: 35vh;
+    font-size: 1rem;
+    left: 450px;
+    /* border-top-left-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+}
+@media  (max-width: 375px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 2rem; */
+    }
+    header #menu-icon {
+        display: grid;
+        /* padding-left: 5rem; */
+    } 
+    .navlinks {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 50%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: rgb(229, 26, 26);
+        left: 1000px;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navlinks.active {
+        background-color: rgb(229, 26, 26);
+        top: 55px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 20vh;
+        font-size: 3rem;
+        left: 200px;
+        /* border-top-left-radius: 10px; */
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+    }
+    .dropdown-content {
+        display: block;
+        /* grid-template-columns: auto; */
+        margin: 0;
+        width: 70%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 35vh;
+        z-index: -1;
+        background-color: rgb(208, 208, 208);
+        /* left: 1000px; */
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .dropdown-content.active {
+        background-color: rgb(216, 216, 216);
+        top: 105px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 35vh;
+        font-size: 1rem;
+        left: 40px;
+        /* border-top-left-radius: 10px; */
+        border-bottom-left-radius: 20px;
+        z-index: 1;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    header .name .bx {
+        font-size: 1.2rem;
+    }
+    header .name a {
+        font-size: 0.8rem;
+    }
+    .dashboard_header {
+        /* display: none; */
+    }
+    .dash {
+        display: none;
+    }
+    .dashboard_container {
+        background: none;
+    }
+    .dashboard_content {
+        margin: 0;
+    }
+    .checking span h2 {
+        font-weight: 550;
+        font-size: 0.8rem;
+    }
+    .checkings {
+        /* gap: 8rem; */
+        width: 100%;
+        border-left: none;
+        padding: 0;
+    }
+    .checking_amount h2 {
+        font-size: 1rem;
+    }
+    .checking span .bx {
+        display: none;
+    }
+    .checking .acc {
+        gap: 0.5rem;
+        font-size: 0.6rem;
+        padding-left: 0px;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    .checking_amount p {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+    }
+    .checking_amount {
+        padding-bottom: 1rem;
+    }
+    .transfer-navlinks {
+        display: none;
+    }
+    .nav_link {
+        gap: 0.5rem;
+    }
+    .nav_link li a {
+        font-size: 0.6rem;
+    }
+    .nav_link li {
+        padding-right: 0.5rem;
+        /* border-right: none; */
+    }
+    .dashboard_header {
+        padding: 0;
+    }
+    .summary .current {
+        background-color: rgb(222, 213, 213);
+        padding: 15px 5px;
+        margin: 0 ;
+    }
+    .summary .current a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .debit {
+        padding: 15px 5px;
+        margin: 0;
+    }
+    .summary .debit a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .credit {
+        padding: 15px 5px;
+        margin: 0;
+    }
+    .summary .credit a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .balance {
+        padding: 15px 5px;
+        margin: 0;
+    }
+    .summary .balance a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .view {
+        padding: 15px 7px;
+        margin: 0;
+        gap: 3rem;
+    }
+    .summary .view a {
+        font-size: 1rem;
+    }
+    .summary .routine {
+        padding: 30px 7px 40px 7px;
+        margin: 0;
+    }
+    .summary .routine a {
+        font-weight: bold;
+    }
+    .agreement {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .agreement p {
+        width: 325px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    .agreement i {
+        text-decoration: underline;
+    }
+    .agreement__table {
+        width: 400px;
+    }
+    table,th,td {
+        margin: 0;
+        width: 225px;
+    }
+    th {
+        font-size: 0.9rem;
+    }
+    td{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media  (max-width: 420px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 2rem; */
+    }
+    header #menu-icon {
+        display: grid;
+        /* padding-left: 5rem; */
+    } 
+    .navlinks {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 50%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: rgb(229, 26, 26);
+        left: 1000px;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navlinks.active {
+        background-color: rgb(229, 26, 26);
+        top: 55px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 20vh;
+        font-size: 3rem;
+        left: 200px;
+        /* border-top-left-radius: 10px; */
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+    }
+    .dropdown-content {
+        display: block;
+        /* grid-template-columns: auto; */
+        margin: 0;
+        width: 70%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 35vh;
+        z-index: -1;
+        background-color: rgb(208, 208, 208);
+        /* left: 1000px; */
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .dropdown-content.active {
+        background-color: rgb(216, 216, 216);
+        top: 105px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 35vh;
+        font-size: 1rem;
+        left: 40px;
+        /* border-top-left-radius: 10px; */
+        border-bottom-left-radius: 20px;
+        z-index: 1;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    header .name .bx {
+        font-size: 1.2rem;
+    }
+    header .name a {
+        font-size: 0.8rem;
+    }
+    .dashboard_header {
+        /* display: none; */
+    }
+    .dash {
+        display: none;
+    }
+    .dashboard_container {
+        background: none;
+    }
+    .dashboard_content {
+        margin: 0;
+    }
+    .checking span h2 {
+        font-weight: 550;
+        font-size: 0.8rem;
+    }
+    .checkings {
+        /* gap: 8rem; */
+        width: 100%;
+        border-left: none;
+        padding: 0;
+    }
+    .checking_amount h2 {
+        font-size: 1rem;
+    }
+    .checking span .bx {
+        display: none;
+    }
+    .checking .acc {
+        gap: 0.5rem;
+        font-size: 0.6rem;
+        padding-left: 0px;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    .checking_amount p {
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+    }
+    .checking_amount {
+        padding-bottom: 1rem;
+    }
+    .transfer-navlinks {
+        display: none;
+    }
+    .nav_link {
+        gap: 0.5rem;
+    }
+    .nav_link li a {
+        font-size: 0.6rem;
+    }
+    .nav_link li {
+        padding-right: 0.5rem;
+        /* border-right: none; */
+    }
+    .dashboard_header {
+        padding: 0;
+    }
+    .summary .current {
+        background-color: rgb(222, 213, 213);
+        padding: 15px 5px;
+        margin: 0 ;
+    }
+    .summary .current a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .debit {
+        padding: 15px 5px;
+        margin: 0;
+    }
+    .summary .debit a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .credit {
+        padding: 15px 5px;
+        margin: 0;
+    }
+    .summary .credit a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .balance {
+        padding: 15px 5px;
+        margin: 0;
+    }
+    .summary .balance a {
+        font-size: 0.9rem;
+        width: 100px;
+    }
+    .summary .view {
+        padding: 15px 7px;
+        margin: 0;
+        gap: 3rem;
+    }
+    .summary .view a {
+        font-size: 1rem;
+    }
+    .summary .routine {
+        padding: 30px 7px 40px 7px;
+        margin: 0;
+    }
+    .summary .routine a {
+        font-weight: bold;
+    }
+    .agreement {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .agreement p {
+        width: 325px;
+        margin: 0;
+        padding-left: 10px;
+    }
+    .agreement i {
+        text-decoration: underline;
+    }
+    .agreement__table {
+        width: 400px;
+    }
+    table,th,td {
+        margin: 0;
+        width: 225px;
+    }
+    th {
+        font-size: 0.9rem;
+    }
+    td{
+        font-size: 0.8rem;
+    }
+}
+

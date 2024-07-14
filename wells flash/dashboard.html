@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <button class="logo">
+            WELLS FARGO
+        </button>
+        <div class="name">
+            <li>
+                <i class='bx bx-user-circle'></i>
+                <a href="#">Welcome, Mary</a>
+            </li>
+        </div>
+        <div class="nav-links">
+            <ul class="navlinks">
+                <li><i class='bx bx-search-alt-2' ></i></li>
+                <li><i class='bx bx-power-off'></i><a href="./wellsfargo.html">Sign Off</a></li>
+            </ul>
+        </div>
+        <div class='bx bx-menu' id="menu-icon"></div>
+    </header>
+    <section class="dashboard_header">
+          <ul class="nav_link">
+            <span>
+                <li><button class="dropacc">Accounts</button><i class='bx bx-chevron-down'></i></li>
+            </span>
+            <span>
+                <li><a href="#">Brokerage</a><i class='bx bx-chevron-down'></i></li>
+            </span>
+            <span class="dropdwon" id="dropBtn">
+                <li><button class="dropbtn" >Transfer & Pay</button><i class='bx bx-chevron-down'></i></li>
+                <div class="dropdown-content">
+                    <h2>Move Money & Pay Bills</h2>
+                    <a href="./transfer.html">Transfer Money</a>
+                    <a href="letter.html">Pay Bills</a>
+                    <a href="./letter.html">Send Money with Zelle®</a>
+                    <a href="./transfer.html">Wire Money</a>
+                    <a href="./letter.html">Send to Another Country</a>
+                </div>
+            </span>
+            <span>
+                <li><a href="#">Plan & Learn</a><i class='bx bx-chevron-down'></i></li>
+            </span>
+            <span>
+                <li><a href="#">Security & Support</a><i class='bx bx-chevron-down'></i></li>
+            </span>
+          </ul>
+    </section>
+    <section class="dash">
+        <ul class="nav_links">
+            <li>
+                <span id="home"><i class='bx bxs-home'></i></span>
+                <a href="#">Account Summary</a>
+            </li>
+            <li>
+                <a href="#">Switch Account</a>
+                <span id="arrow"><i class='bx bxs-down-arrow'></i></span>
+            </li>
+            <li>
+                <span id="printer"><i class='bx bxs-printer'></i></span>
+                <a href="#">Print</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="dashboard_container">
+        <div class="dashboard_content">
+           <div class="checkings">
+            <div class="checking">
+                <span>
+                <i class='bx bx-money'></i>
+                <h2>EVERYDAY CHECKING</h2>
+                </span>
+                <span class="acc">
+                <p>Account....2907 </p>
+                <p>Routine Numbers</p>
+                </span>
+            </div>
+            <div class="checking_amount">
+                <h2>$120,034.08</h2>
+                <p>Available balance</p>
+            </div>
+           </div>
+           <div class="transfered">
+           <ul class="transfer-navlinks">
+                 <li>
+                    <span><i class='bx bx-transfer'></i></span>
+                    <a href="transfer.html">Transfer Money</a>
+                </li>
+                <li>
+                    <span><i class='bx bxs-mobile'></i></span>
+                    <a href="#">Pay Bills</a>
+                </li>
+                <li>
+                    <span><i class='bx bx-mail-send'></i></span>
+                    <a href="#">Send Money</a>
+                </li>
+                <li>
+                    <span><i class='bx bx-wallet-alt' ></i></span>
+                    <a href="#">Digital Wallet</a>
+                </li>
+                <li>
+                    <span><i class='bx bx-bell'></i></span>
+                    <a href="#">Notification</a>
+                </li>
+            
+           </ul>
+           </div>
+           <div class="summary">
+            <h6>Activity Summary</h6>
+            <span class="current">
+                <a href="#">Current posted balance</a>
+                <p>$120,034.08</p>
+            </span>
+            <span class="debit"> 
+                <a href="#">Pending withdrawal/debits</a>
+                <p>$0.00</p>
+            </span>
+            <span class="credit">
+                <a href="#">Pending deposit/credit</a>
+                <p>$0.00</p>
+            </span>
+            <span class="balance"> 
+                <a href="#">Available balance</a>
+                <p>$120,034.08</p>
+            </span>
+            <span class="view">
+                <a href="#">Monthly Services Fee Summary</a>
+                <a href="#">Account fees quick view</a>
+            </span>
+            <span class="routine">
+                <a href="#">Routine numbers</a>
+                <p>125008547 </p>
+            </span>
+            <span class="routine">
+                <a href="#">Account number</a>
+                <p>411020272907</p>
+            </span>
+           </div>
+           <!-- Agreement -->
+
+<section class="agreement" id="agreement">
+    <i>Online Banking Service Agreement</i>
+    <p>
+        Investment products and services are offered through Wells Fargo Advisors. Wells Fargo Advisors is a trade name used by Wells Fargo Clearing Services, LLC (WFCS) and Wells Fargo Advisors Financial Network, LLC, Members SIPC, separate registered broker-dealers and non-bank affiliates of Wells Fargo & Company.
+
+The Private Bank is an experience level for qualifying clients of Wells Fargo Wealth and Investment Management (WIM). WIM offers financial products and services through affiliates of Wells Fargo & Company. Bank products and services are available through Wells Fargo Bank, N.A., Member FDIC.
+
+FICO is a registered trademark of Fair Isaac Corporation in the United States and other countries.
+
+PazeSM and the PazeSM related marks are wholly owned by Early Warning Services, LLC and are used herein under license.
+
+QuickBooks and Quicken are trademarks of Intuit Inc. registered in the United States and other countries.
+
+Xero is a trademark of Xero Limited.
+
+Zelle® and the Zelle® related marks are wholly owned by Early Warning Services, LLC and are used herein under license. <br>
+
+Deposit products offered by Wells Fargo Bank, N.A. Member FDIC. <br>
+
+RSNIP-06112025-6152963.1.1 <br>
+
+LRC-1123
+    </p>
+
+        <div class="agreement__table">
+            <table>
+                <tr>
+                    <th>Are Not FDIC Insured</th>
+                    <th>Are Not Bank Guaranteed</th>
+                    <th>May Lose Value</th>
+                </tr>
+                <tr>
+                    <td>Are Not Deposits</td>
+                    <td>Are Not Insured by Any Federal Government Agency</td>
+                    <td>Are Not a Condition to Any Banking Service or Activity</td>
+                </tr>
+            </table>
+        </div>
+</section>
+
+        </div>
+    </section>
+
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+

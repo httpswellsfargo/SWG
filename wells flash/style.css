@@ -1,0 +1,477 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/* .bg-img {
+    position: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+} */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    background-color: rgb(229, 26, 26);
+    padding: 10px 12px;
+    border-bottom: 3px solid yellow;
+    /* position: fixed;
+    width: 100%; */
+}
+header #menu-icon {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    display: none;
+}
+header .lock a {
+    color: white;
+    font-size: 1rem;
+}
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.logo {
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(229, 26, 26);
+    font-family: 'Times New Roman', Times, serif;
+}
+.navlinks a {
+    color: white;
+    font-size: 0.8rem;
+}
+.navlinks a:hover {
+    text-decoration: underline;
+}
+.navlinks a .bx {
+    font-size: 1.5rem;
+}
+.search {
+    display: flex;
+    text-align: center;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    border-radius: 12px;
+    /* padding: 10px 8px; */
+}
+.search #q {
+    border: none;
+    padding: 12px 7px;
+    margin-left: 0.4rem;
+}
+.search .bx {
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-left: -6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.login {
+    background-image: url(./wells\ back\ img.jpg) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    background-attachment: fixed;
+    overflow-y: scroll;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.form-container {
+    background: white;
+    width: 900px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    /* position: relative; */
+}
+form {
+    margin: 0 2rem;
+}
+.form-title {
+    display: grid;
+    place-items: center;
+}
+.form-title h4 {
+    font-weight: 350;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.form-title p {
+    font-weight: 299;
+    margin-bottom: 1rem;
+}
+.input-group input {
+    width: 65%;
+    color: inherit;
+    border: none;
+    font-size: 1.5rem;
+    /* padding: 140px auto; */
+    margin-bottom: 0.5rem;
+    outline: none;
+} 
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem auto;
+    border-bottom: 1px solid black;
+    /* border-width: 65%; */
+    width: 65%;
+}
+.input-group span {
+    color: rgb(136, 14, 14);
+}
+.input-group .eye {
+    color: #000;
+}
+.input-group .bx {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.save {
+    padding-left: 8.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+form p {
+    padding-left: 8.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    width: 600px;
+}
+#signInButton {
+    margin-bottom: 2rem;
+    padding: 10px 60px;
+    margin-left: 20rem;
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(229, 26, 26);
+}
+#signInButton:hover {
+    text-decoration: underline;
+}
+.recovery {
+    width: 900px;
+    background-color: #dddddd;
+    margin-left: -1.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-bottom: -2rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.insurance {
+    width: 900px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+.frame {
+    border: 1px solid black;
+    padding: 20px;
+}
+.frame h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+.frame a {
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    color: black;
+    font-weight: 700;
+}
+.frame li {
+    list-style:disc;
+    margin: 1rem auto;
+}
+.insurance p {
+    margin-top: 2rem;
+}
+.footer {
+    background-color: #f4f1f1;
+    padding-top: 1px;
+    padding-bottom: 12px;
+    padding-left: 7rem;
+    width: 1385px;
+    margin-left: -1.2rem;
+    margin-bottom: -2rem;
+    border-top: 1px solid black;
+}
+.nav_links {
+    margin: 1.5rem auto;
+}
+.links {
+    display: flex;
+    gap: 2rem;
+}
+.links a {
+    color: black;
+    border-right: 1px solid gray;
+    padding-right: 0.7rem;
+    font-size: 0.7rem;
+}
+.footer p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+@media  (max-width: 375px) {
+    header #menu-icon {
+        display: grid;
+        padding-left: 5rem;
+    } 
+    header .lock a {
+        display: none;
+    }
+    .logo {
+        font-size: 1.2rem;
+        padding-left: 5rem;
+    }
+    .navlinks {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 50%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: rgb(229, 26, 26);
+        left: 1000px;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navlinks.active {
+        background-color: rgb(229, 26, 26);
+        top: 55px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 50vh;
+        font-size: 3rem;
+        left: 200px;
+        /* border-top-left-radius: 10px; */
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+    }
+    .login {
+        background: none;
+        padding: 0;
+    }
+    .form-container {
+        background: white;
+        width: 400px;
+        padding: 1.5rem;
+    }
+    .form-title h4 {
+        margin-top: -3rem;
+    }
+    .form-title p {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .input-group {
+        width: 100%;
+    }
+    form {
+        margin: 0;
+    }
+    .save {
+        padding-left: 0;
+    }
+    form p {
+        padding-left: 0;
+        font-size: 0.7rem;
+        width: auto;
+    }
+    #signInButton {
+        padding: 10px 60px;
+        margin-left: 6rem;
+    }
+    .recovery {
+        /* width: 200px; */
+        background: none;
+        padding-left: 7rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .insurance {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .frame h1 {
+        font-size: 0.9rem;
+    }
+    .frame a {
+        font-size: 0.9rem;
+    }
+    .footer {
+        width: 100%;
+        padding-left: 1rem;
+        margin-left: 0;
+    }
+    .links {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .links a {
+        color: black;
+        padding-right: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .links li {
+        border-right: 1px solid black;
+    }
+}
+
+
+
+@media  (max-width: 420px) {
+    header #menu-icon {
+        display: grid;
+        padding-left: 5rem;
+    } 
+    header .lock a {
+        display: none;
+    }
+    .logo {
+        font-size: 1.2rem;
+        padding-left: 5rem;
+    }
+    .navlinks {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 50%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: rgb(229, 26, 26);
+        left: 1000px;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navlinks.active {
+        background-color: rgb(229, 26, 26);
+        top: 55px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        height: 50vh;
+        font-size: 3rem;
+        left: 200px;
+        /* border-top-left-radius: 10px; */
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+    }
+    .login {
+        background: none;
+        padding: 0;
+    }
+    .form-container {
+        background: white;
+        width: 400px;
+        padding: 1.5rem;
+    }
+    .form-title h4 {
+        margin-top: -3rem;
+    }
+    .form-title p {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .input-group {
+        width: 100%;
+    }
+    form {
+        margin: 0;
+    }
+    .save {
+        padding-left: 0;
+    }
+    form p {
+        padding-left: 0;
+        font-size: 0.7rem;
+        width: auto;
+    }
+    #signInButton {
+        padding: 10px 60px;
+        margin-left: 6rem;
+    }
+    .recovery {
+        /* width: 200px; */
+        background: none;
+        padding-left: 7rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .insurance {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .frame h1 {
+        font-size: 0.9rem;
+    }
+    .frame a {
+        font-size: 0.9rem;
+    }
+    .footer {
+        width: 100%;
+        padding-left: 1rem;
+        margin-left: 0;
+    }
+    .links {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .links a {
+        color: black;
+        padding-right: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .links li {
+        border-right: 1px solid black;
+    }
+}
+
+
+
